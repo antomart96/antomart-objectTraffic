@@ -1,0 +1,287 @@
+    // GENERAL
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//colors
+$color-background : #F6F8F9;
+$color-red-pink: #FA6980;
+$color-footer: #A6ADB4;
+$color-white-text: #ffffff;
+$color-black-text : #202124;
+$color-grey-text : #A6ADB4;
+
+ul{
+    list-style: none;
+    //remove point in all list
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-background;
+}
+                        // Mobile
+    // HEADDER
+header{
+    nav{ 
+        ul{
+             display: none;
+        }
+    }
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    a{
+        i{
+            padding-right: 15px;
+            font-size: 30px;
+        }
+    }
+}
+    // MAIN
+main{         // First section of the main
+    hr{
+        margin: 40px 45% 40px 45%;
+        border-color: $color-red-pink;;
+    }
+    #topMain{       
+        background-image: url(../images/header.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 380px;
+        text-align: center;
+        color: $color-white-text;
+        padding-top: 100px;
+        hr{
+            margin: 40px 45% 40px 45%;
+            border-color: $color-red-pink;;
+        }
+        p{
+           padding: 0px 10%;
+           text-align: left;
+           font-size: 16px;
+        }
+    }
+        // Second section of the main
+    #botMain{
+        background-color: $color-white-text;
+        box-shadow: 0px 5px 28px 2px rgba(0,0,0,0.44);
+        form{
+            padding: 30px 40px;
+            input{
+                margin: 20px 0px;
+            }
+            strong{
+                color: $color-black-text;
+            }
+            .inputText{
+                color: $color-grey-text;
+                padding: 12px 20px;
+                border-radius: 5px;
+                border-color: $color-grey-text;
+                width: 100%;
+                border: 3px solid lightgrey;
+                border-radius: 4px
+            }
+        }
+    }
+    .book{      
+        margin: 20px 0px;    
+        background-color: $color-red-pink;
+        font-family: 'Limelight', cursive;
+        font-size: 18px;
+        color: white;
+        padding: 14px 50px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    /* More CSS ? Write it here ! Css for the javascript part*/
+    h2{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    #buttonList{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        button{
+            font-size: 14px;
+            background-color: $color-footer;
+            padding: 14px 30px;
+            &.selected{
+                background-color: $color-red-pink;
+            }
+        }
+    }
+    #cards{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        article{
+            position: relative;
+            margin: 10px 20px;
+            padding: 10px 2px;
+            img{
+                width: 300px;
+                height: 250px;
+            }   
+            .harvests {
+                background-color: $color-footer;
+                padding: 10px 20px;
+                color: white;
+                position: absolute;
+                top: -10px;
+                left: 65%;
+                border-radius: 5px;
+                font-size: 10px;
+            }         // u ask in background-image i did but can't fix theb.harvests to be prefect so i did with image instead of background-image
+            // .victims{
+            //     width: 100%;
+            //     height: 100%;
+            //     /background-image: url("");
+            //     background-position: center;
+            //     background-size: contain;
+            //     background-repeat: no-repeat;
+            // }
+        }
+    }
+
+
+}
+    // FOOTER 
+footer{
+    background-color: $color-footer;
+    margin-top: 60px;
+    padding: 30px 60px;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        i{
+            font-size: 30px;
+        }
+    }
+}
+                    // Tablet
+@media screen and (min-width:720px) {
+    header, main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    // header
+    header{
+        img{
+            width: 30px;
+        }
+        #bars{
+            display: none;
+        }
+        nav{
+            ul{
+                display: flex;
+                text-align: center;
+                padding: 20px 0;
+                a{ 
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    padding: 0px 20px;
+                    color: $color-grey-text;
+                }
+            }
+        }
+        a:hover{
+            color: $color-black-text;
+            text-decoration: underline;
+        }
+    }
+    // main
+    main{     
+        // First section of the main
+        #topMain{
+            text-align: center;
+            p{
+                padding-left: 30%;
+                padding-right: 30%;
+            }
+        }
+        // Second section of the main
+        #botMain{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            form{
+                text-align: center;
+                margin: 100px;
+                .inputText{
+                    width: 400px;
+                }
+                .book{
+                    position: absolute;
+                    bottom: -45px;
+                    left: 40%;
+                }
+            }
+        }
+    }
+    //footer
+    footer{
+     
+        ul{
+            justify-content: center; 
+            gap: 30px;
+        }       
+    }
+}
+                   // Desktop
+@media screen and (min-width:1080px) {
+    header, main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    //main
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .placement1{
+            display: flex;
+        }
+        #topMain,#botMain{
+            width: 500px;
+            height: 500px;
+        }
+        // First section of the main
+        #topMain{
+            p{
+                padding-left: 140px;
+                padding-right: 140px;
+            }
+        }
+        // second section of the main
+        #botMain{
+            form{
+                text-align: left;
+                .inputText{
+                    width: 100%;
+                }
+                .book{
+                    left: -75px;
+                }
+            }
+        }
+        #cards {
+            width: 100%;
+           
+
+            align-items: center;
+        }
+    }
+}  
+
+        

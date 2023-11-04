@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Limelight-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+     <!-- Font Roboto-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--link for Font Awesome for color image -->
+    <script src="https://kit.fontawesome.com/9823a17fbf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- HEADER -->
+    <header>
+        <img id="logo" src="./images/logo.png" alt="Logo Image" >
+        <nav>   
+            <ul>
+            <li><a href="#"><strong>home</strong></a></li>
+            <li><a href="#"><strong>discovery</strong></a></li>
+            <li><a href="#"><strong>photos</strong></a></li>
+            <li><a href="#"><strong>contacts</strong></a></li>
+            </ul>
+        </nav>
+        <a id="bars" href="#"><i class="fa-solid fa-bars" style="color: #030e21;"></i></a>
+    </header>
+         <!-- MAIN -->
+    <main>
+        <div class="placement1">
+            <section id="topMain">
+                <h1>Object traffic</h1>
+                <hr>
+                <p>Looking to get rid of an item? Contact us, we'll do the rest</p>
+            </section>
+            <section id="botMain">
+                <form action="request.php">
+                    <label for="name"><strong>Enter your victim's name</strong></label><br>
+                    <input class="inputText"  id="name" type="text" name="name" placeholder="John Doe"><br>
+                    <label for="date"><strong>When should we carry it away ?</strong></label><br>
+                    <input class="inputText"  id="date" type="text" name="date" placeholder="jj//mm/aaaa"><br>
+                    <button  class="book" type="submit">ABDUCT</button> 
+                </form>
+            </section>
+        </div>
+            <!-- Html for the Javascript part ! -->
+        <div class="placement">
+            <section>
+                <h2>Our best harvests</h2>
+                <hr>
+                <nav>
+                    <ul id="buttonList">
+                        <li><button  class="book selected" id="all"> ALL</button></li>
+                        <li><button  class="book" id="inStock"> IN STOCK</button></li>
+                        <li><button  class="book" id="soon">SOON </button></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="cards">
+                <article>
+                    <div class="harvests">soon</div>
+                    <img src="" alt="">
+                <!-- <div class="victims"></div>  -->
+                </article>
+            </section>
+        </div>
+    </main>
+        <!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul>
+                <!-- images come from the font awesome  -->
+                <li><a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-earth-europe" style="color: #ffffff;"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="specs/data.js"> </script>
+    <script src="scripts/clone.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="scripts/validation.js"> </script>
+    <script src="scripts/submission.js"></script>
+
+</body>
+</html>

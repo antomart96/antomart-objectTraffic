@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F8F9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+header nav ul {
+  display: none;
+}
+header a i {
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+main {
+  /* More CSS ? Write it here ! Css for the javascript part*/
+}
+main hr {
+  margin: 40px 45% 40px 45%;
+  border-color: #FA6980;
+}
+main #topMain {
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 380px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 100px;
+}
+main #topMain hr {
+  margin: 40px 45% 40px 45%;
+  border-color: #FA6980;
+}
+main #topMain p {
+  padding: 0px 10%;
+  text-align: left;
+  font-size: 16px;
+}
+main #botMain {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 28px 2px rgba(0, 0, 0, 0.44);
+}
+main #botMain form {
+  padding: 30px 40px;
+}
+main #botMain form input {
+  margin: 20px 0px;
+}
+main #botMain form strong {
+  color: #202124;
+}
+main #botMain form .inputText {
+  color: #A6ADB4;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border-color: #A6ADB4;
+  width: 100%;
+  border: 3px solid lightgrey;
+  border-radius: 4px;
+}
+main .book {
+  margin: 20px 0px;
+  background-color: #FA6980;
+  font-family: "Limelight", cursive;
+  font-size: 18px;
+  color: white;
+  padding: 14px 50px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+main h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+main #buttonList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+main #buttonList button {
+  font-size: 14px;
+  background-color: #A6ADB4;
+  padding: 14px 30px;
+}
+main #buttonList button.selected {
+  background-color: #FA6980;
+}
+main #cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main #cards article {
+  position: relative;
+  margin: 10px 20px;
+  padding: 10px 2px;
+}
+main #cards article img {
+  width: 300px;
+  height: 250px;
+}
+main #cards article .harvests {
+  background-color: #A6ADB4;
+  padding: 10px 20px;
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 65%;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+footer {
+  background-color: #A6ADB4;
+  margin-top: 60px;
+  padding: 30px 60px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul i {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 720px) {
+  header, main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header img {
+    width: 30px;
+  }
+  header #bars {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+  }
+  header nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0px 20px;
+    color: #A6ADB4;
+  }
+  header a:hover {
+    color: #202124;
+    text-decoration: underline;
+  }
+  main #topMain {
+    text-align: center;
+  }
+  main #topMain p {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  main #botMain {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  main #botMain form {
+    text-align: center;
+    margin: 100px;
+  }
+  main #botMain form .inputText {
+    width: 400px;
+  }
+  main #botMain form .book {
+    position: absolute;
+    bottom: -45px;
+    left: 40%;
+  }
+  footer ul {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  header, main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .placement1 {
+    display: flex;
+  }
+  main #topMain, main #botMain {
+    width: 500px;
+    height: 500px;
+  }
+  main #topMain p {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  main #botMain form {
+    text-align: left;
+  }
+  main #botMain form .inputText {
+    width: 100%;
+  }
+  main #botMain form .book {
+    left: -75px;
+  }
+  main #cards {
+    width: 100%;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
